@@ -1,0 +1,179 @@
+{
+  "bbox_method": "onebox",
+  "fit_seconds": 42.53900673100725,
+  "fit_workers": 24,
+  "image_size": 512,
+  "optimize_metrics_separately": false,
+  "params": {
+    "0": {
+      "alpha": 1.1,
+      "min_area": 4,
+      "s": 1.25,
+      "sigma_px": 4.571428571428571,
+      "sigma_rel": 0.008928571428571428,
+      "t_hi": 0.75,
+      "t_lo": 0.7
+    },
+    "1": {
+      "alpha": 1.0,
+      "min_area": 4,
+      "s": 1.25,
+      "sigma_px": 9.142857142857142,
+      "sigma_rel": 0.017857142857142856,
+      "t_hi": 0.6,
+      "t_lo": 0.05
+    },
+    "10": {
+      "alpha": 1.1,
+      "min_area": 4,
+      "s": 1.0,
+      "sigma_px": 0.0,
+      "sigma_rel": 0.0,
+      "t_hi": 0.75,
+      "t_lo": 0.7
+    },
+    "12": {
+      "alpha": 1.0,
+      "min_area": 4,
+      "s": 0.25,
+      "sigma_px": 4.571428571428571,
+      "sigma_rel": 0.008928571428571428,
+      "t_hi": 0.55,
+      "t_lo": 0.5
+    },
+    "13": {
+      "alpha": 1.0,
+      "min_area": 4,
+      "s": 0.75,
+      "sigma_px": 6.857142857142857,
+      "sigma_rel": 0.013392857142857142,
+      "t_hi": 0.6,
+      "t_lo": 0.35
+    },
+    "4": {
+      "alpha": 1.1,
+      "min_area": 4,
+      "s": 0.5,
+      "sigma_px": 0.0,
+      "sigma_rel": 0.0,
+      "t_hi": 0.75,
+      "t_lo": 0.6
+    },
+    "8": {
+      "alpha": 0.9,
+      "min_area": 4,
+      "s": 0.25,
+      "sigma_px": 4.571428571428571,
+      "sigma_rel": 0.008928571428571428,
+      "t_hi": 0.65,
+      "t_lo": 0.15
+    },
+    "9": {
+      "alpha": 1.1,
+      "min_area": 4,
+      "s": 1.25,
+      "sigma_px": 0.0,
+      "sigma_rel": 0.0,
+      "t_hi": 0.75,
+      "t_lo": 0.7
+    }
+  },
+  "params_iobb": null,
+  "purpose": "Arm A1 (NIH-calibrated): OneBox parameters fitted on the NIH validation split, applied unchanged to the RSNA Pneumonia target. Do not refit; arm A2 (Target-calibrated) refits on the target validation split.",
+  "schema_version": 1,
+  "search_space": {
+    "alpha_grid": [
+      0.9,
+      1.0,
+      1.1
+    ],
+    "min_area": 4,
+    "n_configs": 15390,
+    "n_pairs": 171,
+    "s_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25
+    ],
+    "sigma_parameterization": "sigma_rel",
+    "sigma_rel_max": 4.0,
+    "sigma_rel_ref": 224.0,
+    "sigmas": [
+      0.0,
+      2.2857142857142856,
+      4.571428571428571,
+      6.857142857142857,
+      9.142857142857142
+    ],
+    "thresholds": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ]
+  },
+  "selection": "joint_argmax",
+  "selection_metric": "IoU",
+  "source": {
+    "family": "CLARiTy-S-16-512",
+    "selection": {
+      "manifest_best_epoch": 79,
+      "n_attn_layers_avg": 3,
+      "override_outside_recorded_sweep": false,
+      "source": "manifest"
+    }
+  },
+  "target": {
+    "dataset": "rsna",
+    "label_space": "RSNA's own labels (1 finding), i.e. pneumonia is target index 0",
+    "note": "The model is instantiated with --num_classes 14 and -mkw 'logit_mask=[12]', so the localization maps and logits come back indexed by MASKED POSITION, not by the original NIH class index. Pneumonia (NIH index 12) is therefore target index 0. 'params' below stays keyed by NIH index as the provenance record; the evaluator re-keys it to 'target_index' via target_label_map.",
+    "target_index": 0
+  },
+  "target_label_map": {
+    "0": {
+      "alpha": 1.0,
+      "min_area": 4,
+      "s": 0.25,
+      "sigma_px": 4.571428571428571,
+      "sigma_rel": 0.008928571428571428,
+      "t_hi": 0.55,
+      "t_lo": 0.5
+    }
+  },
+  "transferred_finding": {
+    "name": "Pneumonia",
+    "nih_index": 12,
+    "params": {
+      "alpha": 1.0,
+      "min_area": 4,
+      "s": 0.25,
+      "sigma_px": 4.571428571428571,
+      "sigma_rel": 0.008928571428571428,
+      "t_hi": 0.55,
+      "t_lo": 0.5
+    }
+  },
+  "val5": {
+    "acc": 0.41680447668199255,
+    "afp": 1.6257863575184073,
+    "boxes": 2.055294352874595
+  }
+}

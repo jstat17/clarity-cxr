@@ -1,0 +1,461 @@
+{
+  "files": [
+    {
+      "dst": "LICENSE",
+      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef"
+    },
+    {
+      "dst": "NOTICE",
+      "sha256": "aa4a76b75616fcff5469b3a79ffe22b4009da7232a0b7f0bacf39b9d523ab665"
+    },
+    {
+      "dst": "CITATION.cff",
+      "sha256": "91435581cf37f6034cc66e67023b343265a3546e7488da8aa37d1688bf37f034"
+    },
+    {
+      "dst": "pyproject.toml",
+      "sha256": "2d05380dbb5a468fbcc231deecc7e75555f7663bf853ce8fc49be2ca3f3db376"
+    },
+    {
+      "dst": "uv.lock",
+      "sha256": "d507c8bf8e5bae96c6caa850140d81ab5c9d90124ae42be0b68349fe9a00c61f"
+    },
+    {
+      "dst": "README.md",
+      "sha256": "9ce260daa4a6bef23c6ceddf97e433683509c08c39dbfb47987652f3d5598727"
+    },
+    {
+      "dst": ".gitignore",
+      "sha256": "5b7e5e07612128bcd26ec454699af7d2aac5cbc714ccdb8f46440e94aff0095a"
+    },
+    {
+      "dst": ".gitattributes",
+      "sha256": "7c9136aa326de8ac3b8a236dacd03318f26adb88bdaa73c9dc0a4894e1e2eb9a"
+    },
+    {
+      "dst": "src/clarity/__init__.py",
+      "sha256": "0793919fab5abc0f975174ae7db0c42d0375efc3eb893b4a4d7c4c46a0d63e82"
+    },
+    {
+      "dst": "configs/clarity_s16_224.yaml",
+      "sha256": "9720bbbf30d03cf32601a5f7d043476dc2072fe596dc3d9424122c12a64705f9"
+    },
+    {
+      "dst": "configs/clarity_s16_512.yaml",
+      "sha256": "3270ba3240c078313c59fd3e5fb63e9fa6ea63517d0372cd4491f1eec3e47de8"
+    },
+    {
+      "dst": "configs/README.md",
+      "sha256": "29dd3310210ca9506ab834218119fa102fc81d35afad6b39d369394904d9eb65"
+    },
+    {
+      "dst": "configs/teacher_convnextv2b_224.yaml",
+      "sha256": "fea63c5d45b8296d5d011d9976ed1570e734b37d500df28e8f283be63b6e329b"
+    },
+    {
+      "dst": "configs/teacher_convnextv2b_512.yaml",
+      "sha256": "1b2b87335e439e5daf928dbeeed876f5697c84d858edf1aba482a9b68863c11b"
+    },
+    {
+      "dst": "docs/data.md",
+      "sha256": "96bc8199ca40ce0a7d080443b22fbd96e762e8598ad9741763526f27c678cd8e"
+    },
+    {
+      "dst": "docs/training.md",
+      "sha256": "71e0ef609ff0ad45fcfadbcde97172d87a0290fb81e0019181ddba86e36f8d7e"
+    },
+    {
+      "dst": "docs/evaluation.md",
+      "sha256": "fe7d6e1c13f3d6e2008fcbc3910a975a55922aafee9ad336ece356eaaf8df2ef"
+    },
+    {
+      "dst": "docs/artifacts.md",
+      "sha256": "65d4bd12cb37a4f26f4f42709322d2124039779fd15bbec8f527f98db9af61a5"
+    },
+    {
+      "dst": "docs/onebox.md",
+      "sha256": "71727ab844a6e121bd3f084189fe78d6049108f0092ced5e7c5b61f51d21d060"
+    },
+    {
+      "dst": "docs/transfer.md",
+      "sha256": "726c310105232d4c81d2001207cd65d5e48593d7e69b54b219f34540cf7cec9b"
+    },
+    {
+      "dst": "calibration/a1_onebox_nih_224.json",
+      "sha256": "3e65c51485daa7fd0866c7927a0b0ac6dcab4dc0284d7bdbe4d888f6be154fe7"
+    },
+    {
+      "dst": "calibration/a1_onebox_nih_512.json",
+      "sha256": "30de7184217269804b59df28e39734e1dcea6dd5d2c5b144c60d8b7617b103fc"
+    },
+    {
+      "dst": "calibration/a1_onebox_nih_vindr6_224.json",
+      "sha256": "45f7d2920eccb58c203dd838969df7b513ebcb519cf41f4ae8dea9b7fee9320d"
+    },
+    {
+      "dst": "calibration/a1_onebox_nih_vindr6_512.json",
+      "sha256": "f33a931ec2e263b5a43ce0046eb164e4ee27c8f53a3703cd52bcb534f7e9b339"
+    },
+    {
+      "dst": "src/clarity/models/clarity/__init__.py",
+      "sha256": "fe8b3e14b3bdf7b8c7ad2c71925b9a5974b1ac387c6baee2326112dee2ec7f90"
+    },
+    {
+      "dst": "src/clarity/models/clarity/model.py",
+      "sha256": "ef59e749e36b70e5a75015b00e5aa6eae60a136725a3bed90191eeaafe084182"
+    },
+    {
+      "dst": "src/clarity/models/clarity/init.py",
+      "sha256": "b01e6c0d1c786f7a0a6357fc37880316ef7be81555999018c62052e21c3fe31c"
+    },
+    {
+      "dst": "src/clarity/models/clarity/weights.py",
+      "sha256": "d820aae9a171b06eedffa5d5ca3c591ab5b121026b52e09b2eb914477e5a46d7"
+    },
+    {
+      "dst": "src/clarity/models/clarity/factory.py",
+      "sha256": "030d42fd027a39715eebf04267b8821293143e615a843f88901c5df2c0b9f52a"
+    },
+    {
+      "dst": "src/clarity/models/convnext/__init__.py",
+      "sha256": "334bf875a826c990908b8eb93430efad59c6fb84b57307ec7447abb9035374b3"
+    },
+    {
+      "dst": "src/clarity/models/convnext/convnextv2.py",
+      "sha256": "30cebd2e7e8e89c1f74941488c691d21f45f082ad24d81a514268d52bc001131"
+    },
+    {
+      "dst": "src/clarity/models/factory.py",
+      "sha256": "9d7ee25b3a4044473f7378c1ac97ed30e1d236205ffdfaab6af01f501c3b48e3"
+    },
+    {
+      "dst": "src/clarity/models/registry.py",
+      "sha256": "083d014a4ff8f82ba36fbd62c7a97f24d4c8d76701f7dbd0bc91871fcc030013"
+    },
+    {
+      "dst": "src/clarity/models/_weights.py",
+      "sha256": "24687bb90b28bf448be754821e3f10fb3967fba14c0edc586eba33479a363207"
+    },
+    {
+      "dst": "src/clarity/models/fuse_findings.py",
+      "sha256": "c90e08e96174161fb919c6de802c520521a60e277be8471d4c3ae24023f80f6c"
+    },
+    {
+      "dst": "src/clarity/models/layers/init.py",
+      "sha256": "ecdaca0d00492cf795d22f6fae85155c0e67b5307a89980e5dfb47bc165a6836"
+    },
+    {
+      "dst": "src/clarity/models/layers/segmentcam.py",
+      "sha256": "ec7436afd921ca0aec5c7e190be8e04a74af554854172423122ce84dbc25cc0e"
+    },
+    {
+      "dst": "src/clarity/models/layers/pool.py",
+      "sha256": "3bfffa3548d3037e97d333ac60d18442932e6e112684ee2dbd41abb350a4faaf"
+    },
+    {
+      "dst": "src/clarity/models/layers/norm.py",
+      "sha256": "88e323d627dbd5e8c57ee3d1962691f50088269c30596055634459a34eb4e990"
+    },
+    {
+      "dst": "src/clarity/models/layers/dropout.py",
+      "sha256": "ffa35a1eb13b6962e7a0531af9e581b17eb7066662442b673fb4d764ec7f64e0"
+    },
+    {
+      "dst": "src/clarity/models/layers/upsample.py",
+      "sha256": "cf1c045f651c212abd85fc9f2315133d8a8a5d03483fd74ca8a6997ab5531acd"
+    },
+    {
+      "dst": "src/clarity/losses/__init__.py",
+      "sha256": "fa8c221431f8051de18ca290a07682381f93a60d802f46ddc06040cc0464ceb4"
+    },
+    {
+      "dst": "src/clarity/losses/wbce.py",
+      "sha256": "b4930d3504388296b7cdb571a9b6a2f0121602d1b5342bcf639af87f49a43164"
+    },
+    {
+      "dst": "src/clarity/losses/bas.py",
+      "sha256": "aa476afcc23e32001725b6227e0982924c3e946511a6846eb6469a37b90ac0a3"
+    },
+    {
+      "dst": "src/clarity/losses/dice.py",
+      "sha256": "06c6921d05d45359583fa90e1e6ed40016509c51f8b6ca88da611b7d9b408e05"
+    },
+    {
+      "dst": "src/clarity/losses/combined.py",
+      "sha256": "fee0303b94c77a3f2daa31ba5ad8ebfd2caf94c5cf8308e954c61dc27632dfc6"
+    },
+    {
+      "dst": "src/clarity/losses/mlsm.py",
+      "sha256": "76cb2e9bf51c28de0b3729a6de38e78d81512f03472ed0a01936547b5754bfa5"
+    },
+    {
+      "dst": "src/clarity/losses/registry.py",
+      "sha256": "d36218689ec39277af2883ee363c667ea47a9f617e37d4d9a57572de64edb83b"
+    },
+    {
+      "dst": "src/clarity/losses/utils.py",
+      "sha256": "e2e9eac6bcfc96a56f4c8971eed714857a8140f0f822f3ea71d091a6b89b2595"
+    },
+    {
+      "dst": "src/clarity/data/chestxray14.py",
+      "sha256": "82be09a2d41b91956d4c5cb24429d73d32ab5ff1ec825547fc6121f541b057f2"
+    },
+    {
+      "dst": "src/clarity/data/utils.py",
+      "sha256": "de7dbbb97a45e86dac215358a1a1ad4f502c7645fee6b8a6d4660f77fbf5877e"
+    },
+    {
+      "dst": "src/clarity/data/splits.py",
+      "sha256": "6e373ea95bbed12eb1e92a9aea44ddc9a4959b9bc6882b9bd5e7a3db41ef7e59"
+    },
+    {
+      "dst": "src/clarity/data/__init__.py",
+      "sha256": "fcfdb3179174377f7cd17600d53b400599879eef1f700ff1f9d7ff9143e246c8"
+    },
+    {
+      "dst": "src/clarity/data/errors.py",
+      "sha256": "783e3548395534a5c422489cda34844631719061f6bd8618841779eda8094d7c"
+    },
+    {
+      "dst": "src/clarity/data/files.py",
+      "sha256": "81944fd39cd226799956ceff3bd8e6239d4954b2e391a45b1a0f4461e560c293"
+    },
+    {
+      "dst": "src/clarity/data/labels.py",
+      "sha256": "7f2d0c167640af201b326adb05152788d8cab317b5a7668af1a43b21a242104a"
+    },
+    {
+      "dst": "src/clarity/data/segmentation.py",
+      "sha256": "02da5e9955612ef41c9a72b47f8f6e8f4262f948e88ad8a1babd3e82fec67ac0"
+    },
+    {
+      "dst": "src/clarity/data/loader.py",
+      "sha256": "c051a03a20acf4ecf993da75b5a360a48445f55a9f7632949653a9e230c6084e"
+    },
+    {
+      "dst": "src/clarity/data/xrv.py",
+      "sha256": "1834c79cffa943147beec3b3566a4c67e8e9528b65405ca40796d66b2f244531"
+    },
+    {
+      "dst": "src/clarity/data/rsna.py",
+      "sha256": "a11d881278161b6cfac3a5768d4263aa28959dee278455622686c34159cb0f50"
+    },
+    {
+      "dst": "src/clarity/data/vindr.py",
+      "sha256": "1de784203b5cdcdb8fc59a38d16dfe2e57f4e3168f25de0d8c855b2ff4ffecae"
+    },
+    {
+      "dst": "src/clarity/data/augment.py",
+      "sha256": "b71d31178134282d3111d1b88935d8f41ca1724eefea05d7fbf75664a8d97f60"
+    },
+    {
+      "dst": "src/clarity/data/transform.py",
+      "sha256": "cf406f540c77e6ced1a91ebffe786e6d14105354db46abe8c9eaf8efa1a2728c"
+    },
+    {
+      "dst": "src/clarity/localization/__init__.py",
+      "sha256": "35d00eba555f27baab315ec230c66eed181dc4a0795f0624bc8bc6f663a7aeaa"
+    },
+    {
+      "dst": "src/clarity/localization/constants.py",
+      "sha256": "be48f6a98b4768b97ee877a5e0c972df43b2b5ce55abad21645235e886375e39"
+    },
+    {
+      "dst": "src/clarity/localization/onebox.py",
+      "sha256": "94371abc89a5c1c2f48f2574c821ef43a32863eb9ba19da55dcde98771f9fb11"
+    },
+    {
+      "dst": "src/clarity/localization/fitting.py",
+      "sha256": "54a5772671b9bc8d2245324c4a779a3d6414136adf14929345816e1c9add71c2"
+    },
+    {
+      "dst": "src/clarity/localization/sweep/__init__.py",
+      "sha256": "caff98d21f5b7140a160762b751a15e8238ec85beb5bae61042a65e2b101e2b6"
+    },
+    {
+      "dst": "src/clarity/localization/sweep/spec.py",
+      "sha256": "ac3ca465bb72f05031b5b65eff3d03919abfc258c0ec47cc5e3b89e40cf9278e"
+    },
+    {
+      "dst": "src/clarity/localization/sweep/selection.py",
+      "sha256": "453cb63b63517cecd6bca285ec0f842eeebc0ce81598114cab660f6d8b89deae"
+    },
+    {
+      "dst": "src/clarity/localization/sweep/manager.py",
+      "sha256": "5224f9c175cb6090e1dd98d01a38aab9fd87d0b39248701737b119d7159ccb13"
+    },
+    {
+      "dst": "src/clarity/localization/attention.py",
+      "sha256": "57341e8a504afe193e9ac42c4842e1f9b25ec268ed2432d39af08e66a843cce2"
+    },
+    {
+      "dst": "src/clarity/localization/metrics.py",
+      "sha256": "00ebd614e76383d8d7308e8027cbb86ae935cf1729148bd3ca8a51826411b740"
+    },
+    {
+      "dst": "src/clarity/localization/evaluation.py",
+      "sha256": "5b08699e83548546fe216eb02ff114175ca629984f849193f78730af3211caf0"
+    },
+    {
+      "dst": "src/clarity/localization/artifacts.py",
+      "sha256": "00ec5ba317f2412f10adb50b29688a08ce5efe0adddd2c630f296f3364db7412"
+    },
+    {
+      "dst": "src/clarity/localization/errors.py",
+      "sha256": "ca41808b1b38114776fdb6335f184a9cf110956013d5c5f3fe0b84529eea0443"
+    },
+    {
+      "dst": "src/clarity/localization/hirescam.py",
+      "sha256": "f1c411cde984b05faa182e0bbb2fb110abff91c910ace3bb74d9edf06c29d8e4"
+    },
+    {
+      "dst": "src/clarity/localization/legacy.py",
+      "sha256": "c70becef9d48e32185c2baae51b99c32494e591048ac1533216a96b489080ed5"
+    },
+    {
+      "dst": "src/clarity/evaluation/classification.py",
+      "sha256": "7ed30e2519f1e8c237d27143a78bce3fb832d170615ca6acf992f8adeb6ef53b"
+    },
+    {
+      "dst": "src/clarity/evaluation/loop.py",
+      "sha256": "ad1f7086b01d2ff055dbb3db5b7a83c0a6790861e324f2f91afb55197470b48e"
+    },
+    {
+      "dst": "src/clarity/evaluation/arms.py",
+      "sha256": "727506a126c896c188330397abf7d6ed3c24bb86e9b2cbbdc55f3bbe88ac0e9f"
+    },
+    {
+      "dst": "src/clarity/evaluation/setup.py",
+      "sha256": "b7065a2fb537412b272d3dc4aaaf27ae3ff8aa14e1ed64c0bb2033cb8de084a8"
+    },
+    {
+      "dst": "src/clarity/training/loop.py",
+      "sha256": "11ba09c25db5da9d3a5f3a2b14a340d636318dca2919c5974174feb244dcc7ff"
+    },
+    {
+      "dst": "src/clarity/training/setup.py",
+      "sha256": "9a03980c56b5d46cd919810cc7abd67a2690a1033f7815fd68b770574ed9ed47"
+    },
+    {
+      "dst": "src/clarity/training/runner.py",
+      "sha256": "9296078aa849806047eebef831d12426f67cb7dcab9e097e6e3e383e61972855"
+    },
+    {
+      "dst": "src/clarity/training/epoch.py",
+      "sha256": "723840ae9d6cde6ea4e400bc9460399eb39f93ac93169096250608048ec1ccd5"
+    },
+    {
+      "dst": "src/clarity/training/artifacts.py",
+      "sha256": "9c4ba648e7fc0756c831c9d2969ca9ee8a2e01231148fb793b94d35b3149f9b8"
+    },
+    {
+      "dst": "src/clarity/training/selection.py",
+      "sha256": "34e42563c9f2addb1efa771e9aacdb165e285f7de9830984df07db55cf6b64a0"
+    },
+    {
+      "dst": "src/clarity/training/runtime.py",
+      "sha256": "83725b18a8ddb26c3629181b30ea188b3eb413ecbc66dae2dfba72a4b5455dbb"
+    },
+    {
+      "dst": "src/clarity/training/scheduler.py",
+      "sha256": "703eb134b6de95b6bf41dbd07255302ffc0fd3da0124ad4091aeb405b5c98e55"
+    },
+    {
+      "dst": "src/clarity/training/config.py",
+      "sha256": "f0321b3e42d6d2db0f8d70c55865629994050c9f7c65b33bdd2005ca6d653065"
+    },
+    {
+      "dst": "src/clarity/training/sweep_spec.py",
+      "sha256": "095aedaba5e98f00896b01d541e6b61f6d10be5190a9c3235105dd8a7741b77e"
+    },
+    {
+      "dst": "src/clarity/cli/__init__.py",
+      "sha256": "8a7500b889bbf83d1e7ee93bc345994b8226bc43858e48581c8d66a633faa6ea"
+    },
+    {
+      "dst": "src/clarity/cli/train.py",
+      "sha256": "fa0d399ef6baa935325cf15e63ff8a4c807ad40f42531f6d35fa534307367837"
+    },
+    {
+      "dst": "src/clarity/cli/evaluate.py",
+      "sha256": "ce7c24e6d250869f7ce5cd82e0368e9102347288ee77bd45ea34bf632bc5a0c6"
+    },
+    {
+      "dst": "src/clarity/cli/predict.py",
+      "sha256": "39b1ddbe341b08f02f39a7e723083bef785f3c65e510e8a110ce036d0a596a9e"
+    },
+    {
+      "dst": "src/clarity/cli/segment.py",
+      "sha256": "cbf959a732c025ce963aa3d3f098f436e11d97d511138945f5dce0d320120763"
+    },
+    {
+      "dst": "src/clarity/cli/prepare_masks.py",
+      "sha256": "2c88c6251bf1966788ed8f24e9e5acd16f3adfb3b75774771186ef7813a358e8"
+    },
+    {
+      "dst": "src/clarity/cli/baselines.py",
+      "sha256": "bde76dc4227ef418b27eb393b48eb1984b96581c0ae9be3315d2d22371ebf6c6"
+    },
+    {
+      "dst": "src/clarity/external/__init__.py",
+      "sha256": "1a5c2268fcdb58b35518d1214e244dfd31b7fcdc4511cce22a79b4976e31bdcb"
+    },
+    {
+      "dst": "src/clarity/external/checkpoints.py",
+      "sha256": "fc5694ac04fc6e44fd264690f3342310be0094398aa2d10a3b86345234896e1c"
+    },
+    {
+      "dst": "src/clarity/external/evaluate.py",
+      "sha256": "f4f3dd9be5d4d96e6667d67a4fedbfbf849d778eb86ec1e41b5af4785cc4f4e3"
+    },
+    {
+      "dst": "src/clarity/external/labels.py",
+      "sha256": "df2f6e603aded37cd0a5bd25fbc5bfab9badb960bbf4f6402e32629310a9aa6a"
+    },
+    {
+      "dst": "src/clarity/external/localization.py",
+      "sha256": "1119ad75077db7ce509601d04fb753d0120390f864bae126aa608148b031c7da"
+    },
+    {
+      "dst": "src/clarity/external/preprocess.py",
+      "sha256": "368989ce46b50c41b901ecb8ba07fa84f5d4977d95974e3ab9c2d9f35f2be0d9"
+    },
+    {
+      "dst": "src/clarity/external/probe.py",
+      "sha256": "f28698faa7a3d33e616699aedb6d1ec9af2a85caad450ab58890ceeb2ad76d25"
+    },
+    {
+      "dst": "src/clarity/external/raddino.py",
+      "sha256": "22d250eeaad06edbf9b3004d375d6df017f2efdc256ed39dafd847a5f2531507"
+    },
+    {
+      "dst": "src/clarity/external/runners.py",
+      "sha256": "5083c4c68464b31d045cfea7b1e8ca306bd6856b94a07d34a39e7f92e79e2c23"
+    },
+    {
+      "dst": "src/clarity/utils/paths.py",
+      "sha256": "56795b15de6ab1585107826029912c5be8e7a56c2d5182587a3a679019fd1f2b"
+    },
+    {
+      "dst": "src/clarity/utils/cli.py",
+      "sha256": "a411016e715164b565cd351b396590314c479845ef210843b93531b45a7bedf9"
+    },
+    {
+      "dst": "src/clarity/utils/io.py",
+      "sha256": "269608c841eebfbd1061bf7c3b9bdfe23829a2951c56a3f8a295477ef7145a1b"
+    },
+    {
+      "dst": "src/clarity/utils/runtime.py",
+      "sha256": "0f46f163bf27bde424c6c7c5707ae7a9e15f6073f81d6fcc16e14391e6503970"
+    },
+    {
+      "dst": "src/clarity/utils/types.py",
+      "sha256": "14c12e44c0378401a6b33de8b38bea16277d1393f73804f07aa37e97030545f5"
+    },
+    {
+      "dst": "src/clarity/utils/typing.py",
+      "sha256": "c4eec113c50b9bd6ffaa40fac5b5b92258f7ef224130654cab48eae5ec6ef49c"
+    }
+  ],
+  "python_version": "3.11.13"
+}

@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the CLARiTy paper (preferred-citation) and this repository."
+title: "clarity-cxr: code for CLARiTy, a Vision Transformer for Multi-Label Classification and Weakly-Supervised Localization of Chest X-ray Pathologies"
+type: software
+version: 1.0.0
+date-released: "2026-11-07"
+license: AGPL-3.0-only
+repository-code: "https://github.com/jstat17/clarity-cxr"
+authors:
+  - family-names: Statheros
+    given-names: "John M."
+    orcid: "https://orcid.org/0009-0006-3675-2169"
+    affiliation: "School of Computer Science and Applied Mathematics, University of the Witwatersrand"
+  - family-names: Wang
+    given-names: Hairong
+    orcid: "https://orcid.org/0000-0001-8770-5916"
+    affiliation: "School of Computer Science and Applied Mathematics, University of the Witwatersrand"
+  - family-names: Klein
+    given-names: Richard
+    orcid: "https://orcid.org/0000-0003-0783-2072"
+    affiliation: "School of Computer Science and Applied Mathematics, University of the Witwatersrand"
+preferred-citation:
+  type: article
+  title: "CLARiTy: A Vision Transformer for Multi-Label Classification and Weakly-Supervised Localization of Chest X-ray Pathologies"
+  authors:
+    - family-names: Statheros
+      given-names: "John M."
+      orcid: "https://orcid.org/0009-0006-3675-2169"
+    - family-names: Wang
+      given-names: Hairong
+      orcid: "https://orcid.org/0000-0001-8770-5916"
+    - family-names: Klein
+      given-names: Richard
+      orcid: "https://orcid.org/0000-0003-0783-2072"
+  journal: "arXiv preprint"
+  year: 2025
+  notes: "arXiv:2512.16700, version 2"
+  url: "https://arxiv.org/abs/2512.16700"

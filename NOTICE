@@ -1,0 +1,23 @@
+CLARiTy
+=======
+
+Copyright (c) 2026 John Statheros and contributors.
+
+This distribution includes software derived from timm
+(https://github.com/huggingface/pytorch-image-models), licensed under the
+Apache License 2.0.
+
+The optional data-preparation command uses torchxrayvision
+(https://github.com/mlmed/torchxrayvision), licensed under the Apache License
+2.0.
+
+The main CLARiTy implementation and this distribution are released under the
+GNU Affero General Public License, version 3 (AGPL-3.0-only); see ``LICENSE``.
+
+The transfer-study tools (``clarity-baselines``, HiResCAM maps) use grad-cam
+(https://github.com/jacobgil/pytorch-grad-cam, MIT) and Hugging Face
+``transformers`` (Apache License 2.0). The RAD-DINO and TorchXRayVision
+checkpoints are downloaded at run time from their publishers and are not
+distributed here; they remain under their own licence terms (see their model
+cards). RSNA Pneumonia Detection Challenge and VinDr-CXR data are likewise not
+distributed and are subject to their own terms of use.

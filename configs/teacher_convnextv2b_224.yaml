@@ -1,0 +1,28 @@
+# ConvNeXtV2-B classification teacher at 224 px.
+model:
+  name: convnextv2
+  size: b
+  num_classes: 14
+  init: imagenet
+  kwargs:
+    img_size: 224
+data:
+  dataset: chestxray14
+  image_size: 224
+  split: classify-70
+  train_localization: false
+  validate_localization: false
+  border_padding: 0
+loss:
+  name: wbce
+  kwargs: {}
+optim:
+  optimizer: adamw
+  learning_rate: 0.000025
+  weight_decay: 0.05
+  batch_size: 8
+  num_epochs: 100
+  warmup_steps: 3
+  accumulation_factor: 128
+augmentation: true
+seed: 0

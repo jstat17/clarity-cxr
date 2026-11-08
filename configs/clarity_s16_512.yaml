@@ -1,0 +1,67 @@
+# CLARiTy-S-16 at 512 px (paper recipe, warm-started from the 224 px checkpoint).
+model:
+  name: clarity
+  size: s-16
+  num_classes: 14
+  weights: <path-to-224-px-checkpoint>/model_best.pth
+  kwargs:
+    img_size: 512
+    weights_img_size: 224
+    n_attn_layers_avg: 3  # paper p=3
+    # paper training dropout: attention pooling/head, MLP, self-attention
+    # and stochastic depth are all 0.1
+    drop_rate: 0.1
+    proj_drop_rate: 0.1
+    attn_drop_rate: 0.1
+    drop_path_rate: 0.1
+    segment_cam_norm_heatmap: false
+data:
+  dataset: chestxray14
+  image_size: 512
+  split: classify-70
+  train_localization: true
+  border_padding: 0
+loss:
+  name: combined
+  kwargs:
+    # Paper weights are alpha_C=2.2674, alpha_P=2.4678, alpha_f=3.9670,
+    # beta=0.4377, gamma=0.1427; the full tuning precision is kept here.
+    alpha_C: 2.2674146440622804
+    alpha_P: 2.4677773704169415
+    alpha_f: 3.967003879741848
+    beta: 0.4376612021802623
+    gamma: 0.1426684236243471
+optim:
+  optimizer: adamw
+  learning_rate: 0.0001
+  weight_decay: 0.05
+  batch_size: 16
+  num_epochs: 200
+  warmup_steps: 5
+  accumulation_factor: 64
+sweep:
+  attention_layer_counts: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  primary: 3  # paper p=3
+localization:
+  bbox_method: onebox
+  selection: joint_argmax
+  optimize_metrics_separately: false
+  method: model_attention
+  attention_type: mask
+  only_correctly_classified: false
+augmentation: true
+augmentation_kwargs:
+  rotate_prob: 1.0
+  crop_prob: 1.0
+  brightness_prob: 1.0
+  noise_prob: 1.0
+  n_noise: 3
+  rotate_angle_min: -15.0
+  rotate_angle_max: 15.0
+  crop_frac_min: 0.7
+  crop_frac_max: 1.0
+  brightness_min: -0.25
+  brightness_max: 0.25
+  poisson_frac_min: 0.0
+  poisson_frac_max: 1.0
+seed: 0
