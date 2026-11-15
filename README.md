@@ -5,7 +5,7 @@
 > **CLARiTy: A Vision Transformer for Multi-Label Classification and
 > Weakly-Supervised Localization of Chest X-ray Pathologies**
 > John M. Statheros, Hairong Wang, Richard Klein.
-> arXiv:2512.16700 (v2): <https://arxiv.org/abs/2512.16700>
+> arXiv:2512.16700: <https://arxiv.org/abs/2512.16700>
 
 CLARiTy (Class Localizing and Attention Refining Image Transformer) is a
 vision-transformer model for multi-label chest X-ray classification with
@@ -139,8 +139,7 @@ If you use this code, please cite the CLARiTy paper (and this repository, via
   year          = {2025},
   eprint        = {2512.16700},
   archivePrefix = {arXiv},
-  url           = {https://arxiv.org/abs/2512.16700},
-  note          = {Version 2}
+  url           = {https://arxiv.org/abs/2512.16700}
 }
 ```
 
